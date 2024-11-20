@@ -1,0 +1,25 @@
+.approach {
+  background: url('public/images/approach-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 637px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 108px;
+    max-width: 50%;
+  }
+
+  &__description {
+    @include fluid-text(18, 16);
+    text-align: justify;
+    line-height: 29px;
+  }
+
+  &__button {
+    max-width: 320px;
+  }
+}

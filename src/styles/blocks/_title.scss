@@ -1,0 +1,8 @@
+.title {
+  @include fluid-text(34, 30);
+
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+}

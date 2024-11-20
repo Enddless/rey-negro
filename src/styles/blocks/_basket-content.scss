@@ -1,7 +1,5 @@
 .basket {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  min-height: calc(100vh - 254px);
+  padding-top: 56px;
 
   &__inner {
     display: grid;
@@ -44,11 +42,16 @@
 
     font-weight: 600;
     grid-column: 9 / 13;
-    border-radius: var(--border-radius-large);
+
     box-shadow: var(--shadow);
-    background-color: var(--color-light);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-dark-alt);
 
     @include mobile {
+      width: 100%;
+    }
+
+    &-button {
       width: 100%;
     }
 

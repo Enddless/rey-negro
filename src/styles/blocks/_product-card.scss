@@ -1,95 +1,60 @@
 .product {
-  padding: 20px;
-  min-height: 407px;
-  position: relative;
-
-  &__data {
+  &__item {
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-dark-alt);
+  }
+  &__info-wrapper {
+    padding: 25px 37px 37px 37px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    position: relative;
+    gap: 20px;
+  }
 
-    &-top {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height:238px;
+  &__photo {
+    border-radius: var(--border-radius-small);
+    overflow: hidden;
+    height: 547px;
 
-      & img {
-        width:100%;
-        height:100%;
-        object-fit: cover;
-      }
-    }
-    &-icon {
-      position: absolute;
-      right: 28px;
-      top: 18px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
-  &__content {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 68px;
-    justify-content: space-between;
+  &__description {
+    @include fluid-text(16, 12);
 
-    &-info {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 27px;
+
+    text-align: justify;
 
     &-title {
+      @include fluid-text(24, 20);
+
+      height: 60px;
+      font-family: var(--font-family-secondary);
+
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &-quality {
       @include fluid-text(17, 15);
-
-      font-weight: 600;
-      color: var(--color-dark-alt);
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #848895;
     }
-
-    &-prices {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-
-      & .current__price {
-        @include fluid-text(17, 15);
-        color: var(--color-accent);
-        font-weight: 600;
-      }
-      & .previos__price {
-        position: absolute;
-        right: 0;
-        top: 20px;
-        @include fluid-text(13, 12);
-        text-decoration: line-through;
-        color: var(--color-accent-light);
-      }
-    }
-
-    &-order {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      align-items: center;
-    }
-
-    &-rate {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-
-      &:hover svg * {
-        fill: var(--color-gray);
-      }
+    & span {
+      font-weight: 400;
     }
   }
 
   &__button {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+    width: 100%;
   }
 }

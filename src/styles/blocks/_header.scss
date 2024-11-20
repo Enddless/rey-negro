@@ -1,9 +1,17 @@
 .header {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  padding: 15px 0;
+  z-index: 10;
+  font-family: var(--font-family-secondary);
+  // border-bottom: 1px solid #fcbf49;
+
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
+    background: transparent;
   }
   &__menu {
     &-list {
@@ -20,7 +28,7 @@
       }
 
       &:hover svg * {
-        fill: var(--color-dark);
+        fill: var(--color-accent);
       }
 
       &--basket {
@@ -33,9 +41,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--color-light);
+        color: var(--color-dark);
         background-color: var(--color-accent);
         border-radius: var(--border-radius-small);
+      }
+    }
+    &-link {
+      @include hover {
+        color: var(--color-accent);
       }
     }
   }

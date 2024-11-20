@@ -1,21 +1,24 @@
-import { headPhones } from '../../mock/mock';
-import ProductCard from '../product-card';
+import { productList } from '../../mock/mock';
+import Approach from '../approach';
+import GetPrice from '../getPrice';
+import Hero from '../hero';
+import Price from '../price';
+import ProductList from '../product-list';
+import Quality from '../quality';
 
 function MainContent() {
+  const itemsPerPage = 3;
+
   return (
-    <main className='products  container'>
-      <h1 className='products__lead'>Наушники</h1>
-      <div className='products__inner'>
-        <ul className='products__list'>
-          {headPhones.map((item) => {
-            return (
-              <li key={item.id} className='products__item product'>
-                <ProductCard item={item} />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+    <main className='content'>
+      <Hero />
+      <ProductList items={productList.slice(0, itemsPerPage)} />
+      <Quality />
+      <ProductList items={productList.slice(itemsPerPage, itemsPerPage * 2)} />
+      <Approach />
+      <ProductList items={productList.slice(itemsPerPage * 2)} />
+      <Price />
+      <GetPrice />
     </main>
   );
 }

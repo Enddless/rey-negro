@@ -23,27 +23,66 @@ function BasketCard({ item }: TProductProps) {
 
   const [total, setTotal] = useState(0);
   useEffect(() => {
-    const result = item.count * item.currentPrice;
+    const result = item.count * item.price;
     setTotal(result);
-  }, [item.count, item.currentPrice]);
+  }, [item.count, item.price]);
 
   return (
     <div className='basket__data'>
       <div className='basket__data-icon' onClick={handleDeleteProduct}>
         <svg
-          width='21'
-          height='17'
-          viewBox='0 0 21 17'
+          width='20'
+          height='20'
+          viewBox='0 0 20 20'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
-          <path
-            d='M15.8848 3.4H20.8667V5.1H18.874V16.15C18.874 16.3754 18.769 16.5916 18.5821 16.751C18.3953 16.9104 18.1418 17 17.8776 17H3.92813C3.66387 17 3.41044 16.9104 3.22358 16.751C3.03672 16.5916 2.93174 16.3754 2.93174 16.15V5.1H0.938965V3.4H5.92091V0.85C5.92091 0.624566 6.02589 0.408365 6.21275 0.248959C6.3996 0.0895533 6.65304 0 6.9173 0H14.8884C15.1527 0 15.4061 0.0895533 15.593 0.248959C15.7798 0.408365 15.8848 0.624566 15.8848 0.85V3.4ZM16.8812 5.1H4.92452V15.3H16.8812V5.1ZM12.3117 10.2L14.0734 11.7028L12.6645 12.9047L10.9029 11.4019L9.14124 12.9047L7.73234 11.7028L9.49396 10.2L7.73234 8.6972L9.14124 7.4953L10.9029 8.9981L12.6645 7.4953L14.0734 8.6972L12.3117 10.2ZM7.91369 1.7V3.4H13.892V1.7H7.91369Z'
-            fill='#DF6464'
-          />
+          <g clip-path='url(#clip0_1222_37750)'>
+            <path
+              d='M1.42859 5H18.5714'
+              stroke='white'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+            <path
+              d='M3.57141 5H16.4286V17.8571C16.4286 18.236 16.278 18.5994 16.0101 18.8673C15.7423 19.1351 15.3788 19.2857 15 19.2857H4.99998C4.6211 19.2857 4.25774 19.1351 3.98983 18.8673C3.72193 18.5994 3.57141 18.236 3.57141 17.8571V5Z'
+              stroke='white'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+            <path
+              d='M6.42859 5.00007V4.28578C6.42859 3.33858 6.80486 2.43017 7.47463 1.7604C8.1444 1.09063 9.05282 0.714355 10 0.714355C10.9472 0.714355 11.8556 1.09063 12.5254 1.7604C13.1952 2.43017 13.5714 3.33858 13.5714 4.28578V5.00007'
+              stroke='white'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+            <path
+              d='M7.85718 9.28784V15.0043'
+              stroke='white'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+            <path
+              d='M12.1428 9.28784V15.0043'
+              stroke='white'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+          </g>
+          <defs>
+            <clipPath id='clip0_1222_37750'>
+              <rect width='20' height='20' fill='white' />
+            </clipPath>
+          </defs>
         </svg>
       </div>
       <div className='basket__data-top'>
-        <img src={item.img} loading='lazy' alt=' photo product' />
+        <img
+          src={item.img}
+          loading='lazy'
+          alt=' photo product'
+          width={200}
+          height={200}
+        />
         <div className='basket__count'>
           <div
             className='basket__count-previos'
@@ -58,7 +97,7 @@ function BasketCard({ item }: TProductProps) {
       </div>
       <div className='basket__content'>
         <p className='basket__content-title'>{item.title}</p>
-        <p className='basket__content-price'>{item.currentPrice} ₽</p>
+        <p className='basket__content-price'>{item.price} ₽</p>
       </div>
       <div className='basket__total'>{total} ₽</div>
     </div>

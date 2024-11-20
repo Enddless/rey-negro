@@ -16,10 +16,7 @@ function BasketContent() {
 
   const [result, setResult] = useState(0);
   useEffect(() => {
-    const totalSum = basket.reduce(
-      (sum, item) => sum + item.count * item.currentPrice,
-      0
-    );
+    const totalSum = basket.reduce((sum, item) => sum + item.count * item.price, 0);
     setResult(totalSum);
   }, [basket]);
 
@@ -50,7 +47,7 @@ function BasketContent() {
                 <p>₽ {result}</p>
               </div>
               <Link to='/order'>
-                <Button text='Перейти к оформлению' cls='button--black' />
+                <Button text='Перейти к оформлению' cls='basket__order-button' />
               </Link>
             </aside>
           </div>

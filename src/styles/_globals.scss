@@ -6,11 +6,10 @@
 
 body {
   @include fluid-text(17, 16);
-  background: var(--color-light-alt);
+  background: var(--color-dark);
   width: 100%;
-  color: var(--color-dark);
-  font-family: var(--font-family-base);
-  font-weight: 400;
+  color: var(--color-light);
+  font-family: var(--font-family-primary);
   user-select: none;
 }
 a,
@@ -26,4 +25,19 @@ a:hover {
 }
 li {
   list-style-type: none;
+}
+
+input {
+  border: 1.27px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-small);
+  padding: 10px 19px;
+  background: var(--color-dark-alt);
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+}
+
+.content {
+  padding-bottom: 70px;
 }

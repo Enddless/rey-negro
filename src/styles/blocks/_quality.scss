@@ -1,0 +1,19 @@
+.quality {
+  background: url('public/images/quality-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 637px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 108px;
+    align-items: center;
+  }
+  &__subtitle {
+    @include fluid-text(18, 16);
+    line-height: 29px;
+    text-align: center;
+  }
+}

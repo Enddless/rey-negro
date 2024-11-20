@@ -1,0 +1,52 @@
+.get-price {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    text-align: right;
+  }
+
+  &__description {
+    @include fluid-text(18, 16);
+    text-align: justify;
+    flex: 1;
+    max-width: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font-family-secondary);
+  }
+  &__video {
+    margin: 0 auto;
+    max-width: 1000px;
+    & video {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__body {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    height: 100%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    flex: 1;
+    max-width: 40%;
+  }
+}

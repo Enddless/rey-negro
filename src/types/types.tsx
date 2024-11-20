@@ -2,10 +2,12 @@ export type TProducts = {
   id: number;
   img: string;
   title: string;
-  currentPrice: number;
-  previosPrice?: number;
-  rate: number;
-  link: string;
+  quality: string;
+  compound?: string;
+  storage_conditions: string;
+  best_before_date: string;
+  weight: string;
+  price: number;
 };
 
 export type TProductsBasket = TProducts & {
