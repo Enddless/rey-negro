@@ -30,6 +30,9 @@
       &:hover svg * {
         fill: var(--color-accent);
       }
+      &--basket-container {
+        margin-right: 10px;
+      }
 
       &--basket {
         @include fluid-text(15, 13);

@@ -1,3 +1,7 @@
 .section {
   padding-block: var(--section-padding-y);
+
+  &--hero {
+    padding: 0;
+  }
 }

@@ -23,10 +23,7 @@ function OrderContent() {
 
   const [result, setResult] = useState(0);
   useEffect(() => {
-    const totalSum = orderData.reduce(
-      (sum, item) => sum + item.count * item.currentPrice,
-      0
-    );
+    const totalSum = orderData.reduce((sum, item) => sum + item.count * item.price, 0);
     setResult(totalSum);
   }, [orderData]);
 
