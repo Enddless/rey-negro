@@ -1,9 +1,9 @@
-import { productList } from '../../mock/mock';
 import Approach from '../approach';
 import GetPrice from '../getPrice';
 import Hero from '../hero';
 import Price from '../price';
 import ProductList from '../product-list';
+import { productList } from '../../mock/mock';
 import Quality from '../quality';
 
 function MainContent() {

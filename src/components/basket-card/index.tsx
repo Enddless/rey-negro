@@ -36,7 +36,7 @@ function BasketCard({ item }: TProductProps) {
           viewBox='0 0 20 20'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
-          <g clip-path='url(#clip0_1222_37750)'>
+          <g clipPath='url(#clip0_1222_37750)'>
             <path
               d='M1.42859 5H18.5714'
               stroke='white'
