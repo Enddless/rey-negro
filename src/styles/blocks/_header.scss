@@ -31,9 +31,6 @@
         cursor: pointer;
       }
 
-      &:hover svg * {
-        fill: var(--color-accent);
-      }
       &--basket-container {
         margin-right: 10px;
         &-mobile {

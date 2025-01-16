@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/market/',
+  base: '/rey-negro/',
   plugins: [react()],
   resolve: {
     alias: {

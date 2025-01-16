@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Provider store={store}>
       <PersistGate loading={<div>Loading</div>} persistor={persistor}>
         <QueryClientProvider client={queryClient}>
-          <BrowserRouter basename='/market/'>
+          <BrowserRouter basename='/rey-negro/'>
             <Router />
           </BrowserRouter>
         </QueryClientProvider>

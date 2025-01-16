@@ -20,17 +20,20 @@ function Header() {
 
   const namesList = ['Главная', 'Каталог', 'Прайс'];
   const handleScroll = (targetId: string) => {
-    const element = document.querySelector(targetId);
-    if (element) {
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offset = 50;
-      const offsetPosition = elementPosition - offset;
+    navigate('/');
+    setTimeout(() => {
+      const element = document.querySelector(targetId);
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offset = 50;
+        const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   const handleScrollAndClose = (targetId: string) => {
@@ -39,7 +42,7 @@ function Header() {
     setTimeout(() => {
       handleScroll(targetId);
       closeModal();
-    }, 500);
+    }, 100);
   };
 
   return (

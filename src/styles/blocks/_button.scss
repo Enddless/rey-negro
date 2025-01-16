@@ -15,7 +15,7 @@
   box-shadow: var(--shadow);
 
   @include hover {
-    background: var(--color-light);
+    background: var(--color-accent);
     color: var(--color-dark-alt);
     border: 1.27px solid var(--color-dark-alt);
   }
