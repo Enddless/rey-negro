@@ -2,16 +2,32 @@
   background: url('public/images/price-bg.png');
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: contain;
+  background-size: cover;
   height: 418px;
 
+  @include mobile {
+    background: none;
+    height: auto;
+  }
+
   &__inner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__body {
     display: flex;
     flex-direction: column;
     gap: 35px;
     align-items: flex-end;
     justify-content: center;
     height: 100%;
+    max-width: 50%;
+
+    @include tablet {
+      max-width: 100%;
+      backdrop-filter: blur(5px);
+    }
   }
   &__title {
     text-align: right;
@@ -20,7 +36,6 @@
     @include fluid-text(18, 16);
     text-align: justify;
     line-height: 29px;
-    max-width: 50%;
     align-items: flex-end;
   }
 }

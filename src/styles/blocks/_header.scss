@@ -12,6 +12,10 @@
     align-items: center;
     justify-content: space-between;
     background: transparent;
+
+    @include mobile {
+      gap: 10px;
+    }
   }
   &__menu {
     &-list {
@@ -32,6 +36,9 @@
       }
       &--basket-container {
         margin-right: 10px;
+        &-mobile {
+          margin-left: auto;
+        }
       }
 
       &--basket {
@@ -50,6 +57,10 @@
       }
     }
     &-link {
+      @include reset-button;
+      color: inherit;
+      cursor: pointer;
+
       @include hover {
         color: var(--color-accent);
       }

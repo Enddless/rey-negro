@@ -30,14 +30,19 @@ function OrderContent() {
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     dispatch(productsSlice.actions.order());
-    navigate('/');
+    setTimeout(() => {
+      navigate('/');
+    }, 3000);
   };
   return (
     <section className='order container'>
       {order.length === 0 ? (
         <div>
-          Заказ еще не сформирован.
-          <Link to='/'>Вернитесь на главную страницу</Link>
+          <p>Успешно!</p>
+          <p>Сейчас вы будете перенаправлены на главную страницу.</p>
+          <p>
+            Если это не произошло, нажмите здесь: <Link to='/'>на главную страницу</Link>
+          </p>
         </div>
       ) : (
         <>

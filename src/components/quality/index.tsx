@@ -4,8 +4,8 @@ function Quality() {
   return (
     <section className='section section--quality'>
       <div className='section__body'>
-        <div className='quality container'>
-          <div className='quality__inner'>
+        <div className='quality'>
+          <div className='quality__inner  container'>
             <Title text='Гарантия качества' cls='quality__title' />
             <p className='quality__subtitle'>
               На нашем производстве мы используем передовые технологии обжарки зерна,
