@@ -6,6 +6,7 @@
   border-radius: var(--border-radius-small);
   color: var(--cl-burger);
   background-color: var(--color-dark-alt);
+  cursor: pointer;
 
   @include hover {
     background-color: var(--color-accent);
