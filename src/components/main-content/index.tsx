@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Approach from '../approach';
 import GetPrice from '../getPrice';
 import Hero from '../hero';

@@ -21,7 +21,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '1000 гр',
+    weight: 1000,
     price: 1323
   },
   {
@@ -33,7 +33,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '1000 гр',
+    weight: 1000,
     price: 1323
   },
   {
@@ -45,7 +45,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '1000 гр',
+    weight: 1000,
     price: 1323
   },
   {
@@ -57,7 +57,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '500 гр',
+    weight: 500,
     price: 700
   },
   {
@@ -69,7 +69,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '500 гр',
+    weight: 500,
     price: 700
   },
   {
@@ -81,7 +81,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '500 гр',
+    weight: 500,
     price: 700
   },
   {
@@ -93,7 +93,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '200 гр',
+    weight: 200,
     price: 310
   },
   {
@@ -105,7 +105,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '200 гр',
+    weight: 200,
     price: 310
   },
   {
@@ -117,7 +117,7 @@ export const productList: TProducts[] = [
     storage_conditions:
       'хранить в сухом прохладном месте, при температуре не выше 27 С и относительной влажности воздуха не более 75',
     best_before_date: '18 месяцев',
-    weight: '200 гр',
+    weight: 200,
     price: 310
   }
 ];
