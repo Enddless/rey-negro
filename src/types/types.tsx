@@ -6,7 +6,7 @@ export type TProducts = {
   compound?: string;
   storage_conditions: string;
   best_before_date: string;
-  weight: string;
+  weight: number;
   price: number;
 };
 

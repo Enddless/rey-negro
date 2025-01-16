@@ -3,7 +3,7 @@ import video from 'public/video/video.mp4';
 
 function GetPrice() {
   return (
-    <section className='section section--get-price'>
+    <section className='section section--get-price' id='Прайс'>
       <div className='section__body'>
         <div className='get-price container'>
           <div className='get-price__inner'>

@@ -11,6 +11,7 @@ function ProductCard({ item }: TProductProps) {
   const addBasket = (product: TProducts) => {
     dispatch(productsSlice.actions.addBasket(product));
   };
+  console.log(item.img);
   return (
     <li className='product__item'>
       <div className='product__photo'>
@@ -40,7 +41,7 @@ function ProductCard({ item }: TProductProps) {
             Срок годности: <span>{item.best_before_date}</span>
           </p>
           <p className='product__description-weight'>
-            Масса нетто: <span>{item.weight}</span>
+            Масса нетто: <span>{item.weight} гр.</span>
           </p>
           <p className='product__description-price'>
             Цена: <span>{item.price} ₽</span>
@@ -48,7 +49,7 @@ function ProductCard({ item }: TProductProps) {
         </div>
 
         <Button
-          text='Купить'
+          text='В корзину'
           onClick={() => addBasket(item)}
           cls='button--bordered product__button'
         />

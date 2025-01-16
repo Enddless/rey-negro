@@ -50,6 +50,10 @@
       }
     }
     &-link {
+      @include reset-button;
+      color: inherit;
+      cursor: pointer;
+
       @include hover {
         color: var(--color-accent);
       }
